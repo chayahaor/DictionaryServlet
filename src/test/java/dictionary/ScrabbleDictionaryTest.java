@@ -33,7 +33,7 @@ class ScrabbleDictionaryTest {
 
 
     @Test
-    void isWord_ZOOGEOGRAPHICAL() {
+    void isWord_Zoogeographical() {
         //given
         ScrabbleDictionary dictionary = new ScrabbleDictionary();
         //then

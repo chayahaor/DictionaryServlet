@@ -8,11 +8,11 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
-public class Define extends HttpServlet {
+public class Servlet extends HttpServlet {
     private final ScrabbleDictionary dictionary;
     Gson gson = new Gson();
 
-    public Define() {
+    public Servlet() {
         dictionary = new ScrabbleDictionary();
     }
 
@@ -22,8 +22,9 @@ public class Define extends HttpServlet {
             throws IOException {
         String word = request.getParameter("word");
         String definition = dictionary.getDefinition(word);
-        if(definition == null){
-            definition =  "Invalid word";
+        if (definition == null)
+        {
+            definition = "Invalid word";
         }
 
         response.setContentType("text/json");

@@ -11,7 +11,7 @@
     <servlet>
         <display-name>DictionaryServlet</display-name>
         <servlet-name>DictionaryServlet</servlet-name>
-        <servlet-class>webapp.Define</servlet-class>
+        <servlet-class>webapp.Servlet</servlet-class>
     </servlet>
 
     <servlet-mapping>

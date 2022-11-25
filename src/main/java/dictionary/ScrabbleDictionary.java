@@ -9,7 +9,8 @@ public class ScrabbleDictionary {
     private HashMap<String, String> words = new HashMap();
 
     public ScrabbleDictionary() {
-        try (InputStream inputstream = ScrabbleDictionary.class.getResourceAsStream("/dictionary.txt"))
+        try (InputStream inputstream =
+                     ScrabbleDictionary.class.getResourceAsStream("/dictionary.txt"))
         {
             Scanner scanner = new Scanner(inputstream);
             while (scanner.hasNextLine())
